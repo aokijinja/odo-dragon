@@ -5,7 +5,7 @@ const aimText = '白い「小戸池」の案内板の文字面を画面に入れ
 const modelPath = './Aoki_Odo_Dragon_Silver_Blue_v22.glb';
 
 // Model placement in units of one sign width. Adjust on site.
-const placement = { x: -1.55, y: -0.75, z: -1.2, height: 3.0, yaw: 0 };
+const placement = { x: 1.55, y: -0.75, z: -1.2, height: 3.0, yaw: 0 };
 let instance;
 
 async function buildScene() {
