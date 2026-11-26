@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>小戸の池の龍神さま｜檍神社</title>
+<style>
+* { box-sizing: border-box; }
+body { margin: 0; background: #102c36; color: white; font: 16px system-ui, sans-serif; }
+#camera { position: fixed; inset: 0; overflow: hidden; isolation: isolate; }
+header { position: fixed; z-index: 2; inset: max(18px, env(safe-area-inset-top)) 16px auto; pointer-events: none; }
+h1 { display: inline-block; margin: 0; padding: 10px 14px; border-radius: 12px; background: #102c36ed; font-size: 19px; }
+footer { position: fixed; z-index: 2; inset: auto 16px max(18px, env(safe-area-inset-bottom)); margin-inline: auto; max-width: 34rem; padding: 14px; border-radius: 14px; background: #102c36ed; }
+p { margin: 0 0 10px; line-height: 1.5; }
+button { width: 100%; padding: 12px; border: 0; border-radius: 8px; background: #d6f4ee; color: #102c36; font: inherit; font-weight: 700; }
+button:disabled { opacity: .7; }
+</style>
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.150.1/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.150.1/examples/jsm/"
+  }
+}
+</script>
+</head>
+<body>
+<div id="camera" aria-hidden="true"></div>
+<header><h1>小戸の池の龍神さま</h1></header>
+<footer>
+<p id="status" role="status">参道から白い「小戸池」の案内板にカメラを向けてください。</p>
+<button type="button" id="start">ARをはじめる</button>
+</footer>
+<script type="module" src="./ar.js"></script>
+</body>
+</html>
